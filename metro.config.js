@@ -3,6 +3,9 @@ const path = require('path');
 
 const config = getDefaultConfig(__dirname);
 
+// Allow Metro to bundle .wasm files (needed for expo-sqlite on web)
+config.resolver.assetExts.push('wasm');
+
 // Redirect Skia's WebGPUViewNativeComponent to a stub to avoid duplicate registration
 // with react-native-wgpu (both register "WebGPUView")
 config.resolver.resolveRequest = (context, moduleName, platform) => {
