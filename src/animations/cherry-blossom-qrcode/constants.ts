@@ -1,18 +1,18 @@
 // Background and container colors
 export const COLORS = {
-  background: '#f7f7f7',
+    background: '#0f172a',
 } as const;
 
 export const CONTAINER_BG = COLORS.background;
-export const DEFAULT_QR_CONTENT = 'https://enzo.fyi';
+export const DEFAULT_QR_CONTENT = 'https://your-event-page.com';
 
-// Color palette for lighting
+// Color palette for lighting (공유회 딥 블루 테마)
 export const PALETTE = {
-  skyZenith: { r: 0.82, g: 0.88, b: 0.92 },
-  skyHorizon: { r: 0.91, g: 0.93, b: 0.91 },
-  sun: { r: 1.15, g: 1.05, b: 0.95 },
-  skyFill: { r: 0.85, g: 0.9, b: 0.95 },
-  bounce: { r: 0.5, g: 0.65, b: 0.42 },
+    skyZenith: { r: 0.20, g: 0.30, b: 0.55 },
+    skyHorizon: { r: 0.30, g: 0.40, b: 0.65 },
+    sun: { r: 0.75, g: 0.88, b: 1.10 },
+    skyFill: { r: 0.25, g: 0.35, b: 0.60 },
+    bounce: { r: 0.20, g: 0.45, b: 0.80 },
 } as const;
 
 // Block/cube dimensions
@@ -21,9 +21,9 @@ export const CUBE_HEIGHT = BLOCK_SIZE;
 
 // Tree structure parameters
 export const TRUNK_RADIUS = 2.5;
-export const TRUNK_LAYERS = 12;
-export const MAX_CANOPY_LAYERS = 12;
-export const CANOPY_OUTER_RADIUS_FACTOR = 0.46;
+export const TRUNK_LAYERS = 14;
+export const MAX_CANOPY_LAYERS = 14;
+export const CANOPY_OUTER_RADIUS_FACTOR = 0.50;
 
 // Grid limits
 export const MAX_GRID_SIZE = 41;
@@ -38,7 +38,7 @@ export const FLAT_ANGLE_Y = 0.0;
 export const FLAT_ANGLE_X = -1.5708; // -π/2
 
 // Animation
-export const LERP_SPEED = 4.0;
+export const LERP_SPEED = 3.0;
 
 // View scaling
 export const VIEW_SCALE_3D = 1.6;
